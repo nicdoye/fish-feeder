@@ -5,8 +5,8 @@ GOBUILD=$(GOCMD) build
 GOCLEAN=$(GOCMD) clean
 GOTEST=$(GOCMD) test
 GOGET=$(GOCMD) get
-GODEP=dep
-BINARY_NAME=hugo-updater
+# GODEP=dep
+BINARY_NAME=fish-feeder
 BINARY_LINUX=$(BINARY_NAME)-linux-amd64
 
 all: test build
@@ -21,8 +21,8 @@ clean:
 run:
 	$(GOBUILD) -o $(BINARY_NAME) -v ./...
 	./$(BINARY_NAME)
-deps:
-	$(GODEP) ensure
+#deps:
+#	$(GODEP) ensure
 
 
 

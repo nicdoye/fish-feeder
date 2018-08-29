@@ -12,5 +12,5 @@
 *.out
 
 # Binaries
-hugo-updater
-hugo-updater-linux-amd64
+fish-feeder
+fish-feeder-linux-amd64
